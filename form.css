@@ -1,0 +1,93 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+  outline:none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:whitesmoke ;
+  width:350px;
+  margin:auto;
+   margin-top: 50px;
+   border-radius: 20px;;
+   padding-bottom: 25px;
+   overflow: hidden;
+}
+form{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1.3rem;
+}
+button{
+    color:white;
+    width:80%;
+    padding:8px ;
+    background-color:blue;
+    border:none;
+}
+h5{
+  display:inline;
+  font-weight:100;
+}
+.field .width{
+  width:250px;
+  height:30px;
+  border-radius: 5px;;
+}
+
+.field{
+  position: relative;
+}
+.field .check_error{
+  position:absolute;
+  top:20px;
+  left:20px;
+  
+}
+.field span{
+  position:absolute;
+  top:20px;
+  right:10px;
+  left:220px;
+  visibility: hidden;
+}
+.field small{
+  position: absolute;
+  bottom:0px;
+  left:0;
+  top:50px;
+  visibility: hidden;
+}
+.field.sucess input{
+  border-color:green;
+
+}
+.field.error input{
+  border-color:red;
+
+}
+.field.sucess span.sucess{
+  color:green;
+  visibility: visible;
+}
+.field.error span.error{
+  color:red;
+  visibility: visible;
+}
+.field.error span.sucess{
+  visibility:none;
+}
+.field.sucess span.error{
+  visibility:none;
+}
+.field.error small{
+  visibility: visible;
+  color:red;
+  
+}
